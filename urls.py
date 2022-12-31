@@ -1,4 +1,4 @@
-from app_and_db import app
+from app import app
 from flask import redirect, url_for, render_template
 
 
@@ -19,7 +19,7 @@ def sign_in():
 
 if __name__ == '__main__':
     app.run(debug=True)
-    from app_and_db import db
+    from app import db
     db.create_all()
 
 
